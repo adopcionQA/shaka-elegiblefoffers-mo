@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true">
+
+	<diskStore path="java.io.tmpdir/shaka-devices" />
+
+	<cache name="additional_services"
+		memoryStoreEvictionPolicy="LFU"
+		maxEntriesLocalHeap="2000"
+		maxEntriesLocalDisk="500"
+		eternal="false"
+		timeToIdleSeconds="0"
+		timeToLiveSeconds="172800"
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+	</cache>
+
+	<cache name="portability_benefits"
+		memoryStoreEvictionPolicy="LFU"
+		maxEntriesLocalHeap="100"
+		maxEntriesLocalDisk="100"
+		eternal="false"
+		timeToIdleSeconds="0"
+		timeToLiveSeconds="172800"
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+	</cache>
+
+	<cache name="replace_offer_benefits"
+		memoryStoreEvictionPolicy="LFU"
+		maxEntriesLocalHeap="100"
+		maxEntriesLocalDisk="100"
+		eternal="false"
+		timeToIdleSeconds="0"
+		timeToLiveSeconds="172800"
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+	</cache>
+
+	<cache name="provide_benefits"
+		memoryStoreEvictionPolicy="LFU"
+		maxEntriesLocalHeap="2000"
+		maxEntriesLocalDisk="500"
+		eternal="false"
+		timeToIdleSeconds="0"
+		timeToLiveSeconds="172800"
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+	</cache>
+
+	<cache
+   		name="priceprop_bynamepropabp"
+   		memoryStoreEvictionPolicy="LFU"
+		maxEntriesLocalHeap="2000" 
+		maxEntriesLocalDisk="500" 
+		eternal="false"
+		timeToIdleSeconds="0" 
+		timeToLiveSeconds="172800"
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+	</cache>
+
+</ehcache>
